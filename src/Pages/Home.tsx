@@ -18,7 +18,7 @@ function Home(){
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Learn React!
+                    Learn Reacte!
                 </a>
             </header>
         </div>
