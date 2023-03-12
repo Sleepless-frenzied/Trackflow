@@ -4,23 +4,24 @@ import './App.css';
 
 
 
-import { Routes, Route} from "react-router-dom";
-//import Navbar from "./Components/Navbar";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 
 function App() {
   return (
       <div className="App">
+          <header className="fixed w-full h-full z-50">
+              <Navbar/>
+          </header>
 
-          {/*<header className="fixed w-full h-full z-50">
-          <Navbar/>
-        </header>*/}
 
-          <p>tt</p>
+          <BrowserRouter>
+              <Routes>
+                  <Route path="/" element={<Home/>}/>
+              </Routes>
+          </BrowserRouter>
 
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-        </Routes>
 
 
       </div>
