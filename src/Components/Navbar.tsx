@@ -56,6 +56,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
 }));
 
+
+
+
 function Navbar() {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
@@ -122,6 +125,7 @@ function Navbar() {
         >
             <MenuItem>
                 <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+                    {/*TODO Inserer nombre de nouveaux messages*/}
                     <Badge badgeContent={4} color="error">
                         <MailIcon />
                     </Badge>
@@ -134,6 +138,7 @@ function Navbar() {
                     aria-label="show 17 new notifications"
                     color="inherit"
                 >
+                    {/*TODO Inserer nombre de nouvelles updates*/}
                     <Badge badgeContent={17} color="error">
                         <NotificationsIcon />
                     </Badge>
@@ -228,9 +233,9 @@ function Navbar() {
                 </Toolbar>
             </AppBar>
             {renderMobileMenu}
+
             {renderMenu}
         </Box>
     );
 }
-
 export default Navbar;

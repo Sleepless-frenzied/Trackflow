@@ -3,8 +3,9 @@ import React from "react";
 
 import logo from '../logo.svg';
 import '../App.css';
+import {Link} from "react-router-dom";
 
-function Home(){
+function Reservation(){
     return (
         <div className="App">
             <header className="App-header">
@@ -20,9 +21,12 @@ function Home(){
                 >
                     Learn Reacte!
                 </a>
+
+                <Link to={'/Reservation'} className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium text-xl"
+                > test</Link>
             </header>
         </div>
     );
 }
 
-export default Home;
+export default Reservation;
