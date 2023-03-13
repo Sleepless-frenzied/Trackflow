@@ -28,7 +28,7 @@ export default function ResponsiveDateTimePickers() {
                                   disablePast
                                   shouldDisableDate={Disable}
                                   onAccept={test}
-                                  orientation={"landscape"}
+
 
 
             />
